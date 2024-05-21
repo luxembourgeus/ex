@@ -78,8 +78,8 @@ img {
 }
 
 .work {
-    flex: 1 1 100%;
-    max-width: 100%;
+    flex: 1 1 60%;
+    max-width: 60%;
     box-sizing: border-box;
     text-align: center;
 }

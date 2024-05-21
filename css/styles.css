@@ -427,12 +427,14 @@ and (max-device-width : 1200px) {
 
     .work img {
         width: auto !important;
-        max-width: 90% !important; /* Ensure the image does not exceed 90% of its container's width */
+        max-width: 100% !important;
         min-width: auto !important;
         max-height: none !important;
         position: relative !important;
-        margin: 0 auto 60px auto !important; /* Center the image and add bottom margin */
-        padding: 0 5%; /* Add padding on the left and right */
+        margin-top: 0 !important;    /* Top margin */
+        margin-right: 5% !important; /* Right margin */
+        margin-bottom: 60px !important; /* Bottom margin */
+        margin-left: 5% !important;  /* Left margin */
         display: block;
     }
     
@@ -501,7 +503,7 @@ and (max-device-width : 1200px) {
         line-height: 1.4em;
         font-size: 50px !important;
     }
-    
 }
+
 
 /* END Smartphone */

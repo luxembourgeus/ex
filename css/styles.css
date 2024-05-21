@@ -164,7 +164,7 @@ body {
 	bottom: 20px;
 }
         .hover-effect:hover::after {
-            content: "neither arrogant nor ignorant enough to call myself an expat.";
+            content: "\A neither arrogant nor ignorant enough to call myself an expat.";
             color: red;
             position: relative;
             background-color: transparent;

@@ -508,8 +508,149 @@ and (max-device-width : 1200px) {
 	font-size: 50px !important;
 
 }
-	
-	
+/* ############## Smartphone ############## */
+
+@media only screen 
+and (min-device-width: 0px) 
+and (max-device-width: 1200px) {
+    
+    #home {
+        font-size: 160px !important;
+        line-height: 0.99em;
+        padding: 150px 0 0 0 !important;
+        margin: 0 0 300px 0;
+        width: 100% !important;
+        height: 100% !important;
+        letter-spacing: normal;
+    }
+    
+    #logo {
+        top: 60px;
+        right: 80px;
+        font-size: 50px;
+        letter-spacing: 0.03em;
+        z-index: 2;
+        width: 500px !important;
+        height: 40px;
+    }
+    
+    .work h1,
+    .work h2 {
+        font-weight: normal !important;
+        font-size: 50px !important;
+        position: relative !important;
+        width: 100% !important;
+        margin: 0px 0 0px 0 !important;
+        padding: 0 0 20px 0 !important;
+        bottom: auto !important;
+        right: auto !important;
+        text-align: left;
+        z-index: 2;
+        line-height: 0.80em;
+        letter-spacing: normal;
+    }        
+    
+    .work {
+        margin-bottom: 240px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        height: auto !important;
+    }
+
+    .work img {
+        width: auto !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        max-height: none !important;
+        position: relative !important;
+        margin: 0px 0 60px 0 !important;
+        top: 0;
+        left: 0 !important;
+        right: 0;
+        bottom: 0;
+        padding-left: 15px;  /* Add padding to the left side */
+        padding-right: 15px; /* Add padding to the right side */
+        display: block;
+    }
+    
+    #contact {
+        margin: 0px 0 120px 0 !important;
+        height: 1600px !important;
+    }
+
+    #contact h1 {
+        font-weight: normal !important;
+        font-size: 80px !important;
+        left: auto !important;
+        bottom: auto !important;
+        padding-top: 120px !important;
+        width: 100% !important;
+        position: relative !important;
+        letter-spacing: normal !important;
+        line-height: 1.4em !important;
+    }
+    
+    #contact div {
+        display: block;
+        line-height: 1.4em !important;
+        position: relative !important;
+        font-size: 80px !important;
+        left: 0px !important;
+        top: 80px !important;
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 60px !important;
+    }
+    
+    #work_details {
+        font-size: 70px !important;
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 60px 0 60px 0 !important;
+    }
+    
+    #work_details img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: none;
+        position: relative;
+        margin: 70px 0 0 0;
+        padding-left: 15px;  /* Add padding to the left side */
+        padding-right: 15px; /* Add padding to the right side */
+        left: auto;
+    }
+    
+    .gif {
+        max-width: 100% !important;
+        min-width: 100% !important;
+        margin: 60px 0px 0 0 !important;
+    }
+    
+    .credit {
+        display: none !important;
+        position: relative;
+        top: auto;
+        left: auto;
+        font-size: 20px;
+        letter-spacing: 0.03em;
+        z-index: 999999;
+        width: auto;
+        height: auto;
+        text-align: right;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+    
+    #impress div {
+        line-height: 1.4em;
+        font-size: 50px !important;
+    }
 }
 
 /* END Smartphone */

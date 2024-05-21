@@ -387,7 +387,7 @@ and (max-device-width : 1200px) {
 	font-size: 160px !important;
 	line-height: 0.99em;
 	padding: 150px 0 0 0 !important;
-	margin: 80px 0 300px 0;
+	margin: 0 0 300px 0;
 	width: 100% !important;
 	height: 100% !important;
 	letter-spacing: normal;
@@ -409,7 +409,7 @@ and (max-device-width : 1200px) {
 	font-size: 50px !important;
 	position: relative !important;
 	width: 100% !important;
-	margin: 80px 0 0px 0 !important;
+	margin: 0px 0 0px 0 !important;
 	padding: 0 0 20px 0 !important;
 	bottom:auto !important;
 	right:auto !important;
@@ -433,7 +433,7 @@ and (max-device-width : 1200px) {
 	min-width:100% !important;
 	max-height: none !important;
 	position: relative !important;
-	margin: 80px 0 60px 0 !important;
+	margin: 0px 0 60px 0 !important;
 	top:0;
 	left:0 !important;
 	right:0;

@@ -47,7 +47,7 @@ a:hover {
 
 body {
 	padding: 0;
-	margin: 80px;
+	margin: 0;
 	text-align: left;
 	-webkit-font-smoothing: antialiased;
 	position:relative;
@@ -60,7 +60,7 @@ body {
 	font-size: 212px;
 	line-height: 0.90em;
 	padding: 120px 75px 0px 75px;
-	margin: 0 0 200px 0;
+	margin: 40px 0 200px 0;
 	width: calc(100% - 150px);
 	height: auto;
 	background-color: #fff;
@@ -134,7 +134,7 @@ body {
 	width: auto;
 	position: absolute;
 	top:0;
-	left: -14%;
+	left: 10%;
 	right:0;
 	bottom: 0;
 	margin: auto;

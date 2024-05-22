@@ -92,20 +92,6 @@ body {
 	text-align: right;
 }
 
-.home-image {
-    display: flex;
-    justify-content: center; /* Center the images horizontally */
-    align-items: center; /* Center the images vertically */
-    margin: 0 75px 200px 75px; /* Match the margin of the text */
-}
-
-.home-image img {
-    position: relative;
-    width: calc(100% - 150px); /* Ensure images take full width of their container */
-    max-width: auto; /* Adjust the max-width as needed */
-    height: auto; /* Maintain aspect ratio */
-}
-
 .hover-effect:hover::after {
     content: "\A neither arrogant nor ignorant enough to call myself an expat.";
     color: red;

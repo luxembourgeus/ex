@@ -101,45 +101,18 @@ body {
 	text-align: right;
 }
 
-:root {
-    --min-gap: 10px; /* Define your minimum gap size */
-}
-
 .home-image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: min(max(1vw, calc(var(--min-gap))), 20px); /* Automatic gap with minimum and maximum values */
+    gap: auto; /* Adjust spacing as needed */
 }
 
 .home-image img {
     width: 100%; /* Ensure images take full width of their container */
     max-width: 600px; /* Adjust the max-width as needed */
-    margin: auto 85px; /* Center the container */
+    margin: auto auto; /* Center the container */
     margin-top: 0;
-    margin-bottom: 85px;
-}
-
-/* Ensure images take full width of their container */
-.home-image img {
-width: 100%;
-height: auto; /* Maintain aspect ratio */
-}
-
-/* Media query for mobile devices */
-@media (max-width: 500px) {
-    
-.home-image {
-grid-template-columns: 1fr;
-}
-
-.home-image img {
-width: 100%;
-height: auto; /* Maintain aspect ratio */
-margin: auto; /* Center the images horizontally */
-margin-top: 0;
-margin-bottom: 85px;
-box-sizing: border-box; /* Include padding and border in the element's total width and height */
-padding: 0; /* Optional: Add padding for spacing */
+    margin-bottom: 100px;
 }
 
 .hover-effect:hover::after {

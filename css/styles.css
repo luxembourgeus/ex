@@ -116,18 +116,6 @@ body {
 	margin-bottom: 85px;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 500px) {
-
-.home-image img {
-	width: 100%;
-	height: auto; /* Maintain aspect ratio */
-	padding: 120px 75px 0px 75px;
-	width: calc(100% - 150px);
-	height: auto;
-	margin-bottom: 85px;
-}
-
 .hover-effect:hover::after {
     content: "\A neither arrogant nor ignorant enough to call myself an expat.";
     color: red;

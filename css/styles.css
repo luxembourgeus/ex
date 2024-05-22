@@ -1,13 +1,5 @@
 @font-face {
-	font-family: 'Teachers', sans-serif;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	unicode-range: U+0020-25CA;
-}
-
-@font-face {
-	font-family: 'Teachers', sans-serif;
+	font-family: "Outfit", sans-serif;;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
@@ -46,7 +38,7 @@ body {
 }
 
 #home {
-	font-family: 'Teachers', sans-serif;
+	font-family: "Outfit", sans-serif;;
 	font-size: 212px;
 	line-height: 0.90em;
 	padding: 120px 75px 0px 75px;
@@ -56,7 +48,7 @@ body {
 	background-color: #fff;
 	z-index: 5;
 	position: relative;
-	letter-spacing: -0.02em;
+	letter-spacing: -0.05em;
 }
 
 #home a:link,
@@ -71,7 +63,7 @@ body {
 }
 
 .hover-effect:hover::after {
-    content: "\A neither arrogant nor ignorant enough to call myself an expat.";
+    content: "\A neither arrogant nor ignorant enough to call myself expat.";
     color: red;
     position: relative;
     background-color: transparent;

@@ -117,9 +117,6 @@ body {
 
 /* Media query for mobile devices */
 @media (max-width: 500px) {
-    .home-image {
-        grid-template-columns: 1fr;
-    }
 
     .home-image img {
         width: 100%;

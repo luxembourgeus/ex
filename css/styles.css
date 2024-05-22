@@ -104,14 +104,13 @@ body {
 .home-image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: auto; /* Adjust spacing as needed */
+    gap: 10px; /* Adjust spacing as needed */
 }
 
 .home-image img {
     width: 100%; /* Ensure images take full width of their container */
     max-width: 600px; /* Adjust the max-width as needed */
 	padding: 120px 75px 0px 75px;
-	margin: 0 0 200px 0;
 	width: calc(100% - 150px);
 	height: auto;
 	margin-bottom: 85px;
@@ -121,12 +120,9 @@ body {
 @media (max-width: 500px) {
 
 .home-image img {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
 	width: 100%;
 	height: auto; /* Maintain aspect ratio */
 	padding: 120px 75px 0px 75px;
-	margin: 0 0 200px 0;
 	width: calc(100% - 150px);
 	height: auto;
 	margin-bottom: 85px;

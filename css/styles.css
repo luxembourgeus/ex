@@ -104,7 +104,7 @@ body {
 .home-image img {
     width: 100%; /* Ensure images take full width of their container */
     max-width: 600px; /* Adjust the max-width as needed */
-	padding: 120px 75px 0px 75px;
+	padding: 0px 0px 0px 75px;
 	width: calc(100% - 150px);
 	height: auto;
 	margin-bottom: 85px;

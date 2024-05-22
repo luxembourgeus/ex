@@ -59,7 +59,7 @@ body {
 	font-family: 'Grotesk-Bold';
 	font-size: 212px;
 	line-height: 0.90em;
-	padding: 120px 75px 0px 75px;
+	padding: 0px 0px 0px 75px;
 	margin: 0 0 200px 0;
 	width: calc(100% - 150px);
 	height: auto;
@@ -78,14 +78,6 @@ body {
 #home a:hover {
 	text-decoration: none; /* You can specify other styles here if needed */
     color: red; /* This will change the text color to red on hover */
-}
-
-#work_wrapper {
-	width:100%;
-	height: auto;
-	position: relative;
-	margin:0;
-	padding:0;
 }
 
 #logo {

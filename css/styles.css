@@ -101,20 +101,24 @@ body {
 	text-align: right;
 }
 
+:root {
+    --min-gap: 10px; /* Define your minimum gap size */
+}
+
 .home-image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px; /* Adjust spacing as needed */
+    gap: min(max(1vw, calc(var(--min-gap))), 20px); /* Automatic gap with minimum and maximum values */
 }
 
 .home-image img {
     width: 100%; /* Ensure images take full width of their container */
     max-width: 600px; /* Adjust the max-width as needed */
-    margin: 85px 85px; /* Center the container */
+    margin: auto 85px; /* Center the container */
     margin-top: 0;
     margin-bottom: 85px;
             box-sizing: border-box; /* Include padding and border in the element's total width and height */
-            padding: 0 10px; /* Optional: Add padding for spacing */
+            padding: 0 0; /* Optional: Add padding for spacing */
         }
 
         /* Ensure images take full width of their container */

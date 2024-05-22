@@ -56,16 +56,16 @@ body {
 }
 
 #home {
-	font-family: 'Grotesk-Bold';
-	font-size: 212px;
-	line-height: 0.90em;
-	margin: 0 0 200px 75px;
-	width: calc(100% - 150px);
-	height: auto;
-	background-color: #fff;
-	z-index: 5;
-	position: relative;
-	letter-spacing: -0.02em;
+	font-family: 'Grotesk-Bold';      /* Uses 'Grotesk-Bold' font */
+	font-size: 212px;                 /* Very large font size */
+	line-height: 0.90em;              /* Lines are slightly closer together */
+	margin: 0 75px 200px 75px;           /* Margin: no top/right, 200px bottom, 75px left */
+	width: calc(100% - 150px);        /* Width calculated as full width minus 150px */
+	height: auto;                     /* Height adjusts based on content */
+	background-color: #fff;           /* White background */
+	z-index: 5;                       /* Stacking order */
+	position: relative;               /* Positioned relative to normal position */
+	letter-spacing: -0.02em;          /* Slightly tighter character spacing */
 }
 
 #home a:link,
@@ -92,14 +92,18 @@ body {
 	text-align: right;
 }
 
+.home-image {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    margin: 0 75px 200px 75px; /* Match the margin of the text */
+}
+
 .home-image img {
-    position:relative;
-    width: 100%; /* Ensure images take full width of their container */
-    max-width: 600px; /* Adjust the max-width as needed */
-	margin: 0 0 200px 75px;
-	width: calc(100% - 150px);
-	height: auto;
-	margin-bottom: 85px;
+    position: relative;
+    width: calc(100% - 150px); /* Ensure images take full width of their container */
+    max-width: 800px; /* Adjust the max-width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .hover-effect:hover::after {

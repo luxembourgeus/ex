@@ -104,21 +104,30 @@ body {
 .home-image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: auto; /* Adjust spacing as needed */
+    gap: 20px; /* Adjust spacing as needed */
 }
 
 .home-image img {
     width: 100%; /* Ensure images take full width of their container */
-    max-width: 650px; /* Adjust the max-width as needed */
-    margin: auto auto; /* Center the container */
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: 85px 85px; /* Center the container */
     margin-top: 0;
     margin-bottom: 85px;
-}
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            padding: 0 10px; /* Optional: Add padding for spacing */
+        }
 
-@media (max-width: 500px) {
-    .home-image {
-        grid-template-columns: 1fr; /* Single column on mobile devices */
-}
+        /* Ensure images take full width of their container */
+        .home-image img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            .home-image {
+                grid-template-columns: 1fr;
+        }
 
 .hover-effect:hover::after {
     content: "\A neither arrogant nor ignorant enough to call myself an expat.";

@@ -59,20 +59,6 @@ body {
 	letter-spacing: -0.02em;
 }
 
-.image-description {
-    font-family: 'Teachers', sans-serif;
-    font-size: 100px;
-    line-height: 0.90em;
-    padding: 120px 75px 0px 75px;
-    margin: 0 0 200px 0;
-    width: calc(50% - 150px);
-    height: auto;
-    background-color: #fff;
-    z-index: 5;
-    position: relative;
-    letter-spacing: -0.02em;
-}
-
 #home a:link,
 #home a:visited,
 #home a:active {
@@ -83,30 +69,6 @@ body {
 	text-decoration: none; /* You can specify other styles here if needed */
     color: red; /* This will change the text color to red on hover */
 }
-
-#logo {
-	position: fixed;
-	top: 60px;
-	right: 80px;
-	font-family:' 'Teachers', sans-serif;
-	font-size: 50px;
-	letter-spacing: 0.03em;
-	z-index: 2;
-	width: 380px;
-	height: 20px;
-	text-align: right;
-}
-
-/* styles.css */
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto;
-}
-
-
 
 .hover-effect:hover::after {
     content: "\A neither arrogant nor ignorant enough to call myself an expat.";

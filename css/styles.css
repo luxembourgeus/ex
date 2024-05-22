@@ -59,7 +59,7 @@ body {
 	font-family: 'Grotesk-Bold';      /* Uses 'Grotesk-Bold' font */
 	font-size: 212px;                 /* Very large font size */
 	line-height: 0.90em;              /* Lines are slightly closer together */
-	margin: 0 75px 200px 75px;           /* Margin: no top/right, 200px bottom, 75px left */
+	margin: 200px 75px 200px 75px;           /* Margin: no top/right, 200px bottom, 75px left */
 	width: calc(100% - 150px);        /* Width calculated as full width minus 150px */
 	height: auto;                     /* Height adjusts based on content */
 	background-color: #fff;           /* White background */

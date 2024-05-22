@@ -59,6 +59,20 @@ body {
 	letter-spacing: -0.02em;
 }
 
+#home-heading {
+	font-family: 'Teachers', sans-serif;
+	font-size: 212px;
+	line-height: 0.90em;
+	padding: 120px 75px 0px 75px;
+	margin: 0 0 200px 0;
+	width: calc(100% - 150px);
+	height: auto;
+	background-color: #fff;
+	z-index: 5;
+	position: relative;
+	letter-spacing: -0.02em;
+}
+
 #home a:link,
 #home a:visited,
 #home a:active {

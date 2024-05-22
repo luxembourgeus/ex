@@ -61,7 +61,7 @@ body {
 
 #home-heading {
 	font-family: 'Teachers', sans-serif;
-	font-size: 212px;
+	font-size: 100px;
 	line-height: 0.90em;
 	padding: 120px 75px 0px 75px;
 	margin: 0 0 200px 0;
@@ -71,6 +71,7 @@ body {
 	z-index: 5;
 	position: relative;
 	letter-spacing: -0.02em;
+	font-weight: normal; /* Remove bold */
 }
 
 #home a:link,

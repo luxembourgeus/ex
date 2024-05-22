@@ -115,6 +115,23 @@ body {
     margin-bottom: 100px;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 500px) {
+    .home-image {
+        grid-template-columns: 1fr;
+    }
+
+    .home-image img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        margin: auto; /* Center the images horizontally */
+        margin-top: 0;
+        margin-bottom: 85px;
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        padding: 10px; /* Optional: Add padding for spacing */
+    }
+}
+
 .hover-effect:hover::after {
     content: "\A neither arrogant nor ignorant enough to call myself an expat.";
     color: red;

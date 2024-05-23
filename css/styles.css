@@ -41,8 +41,8 @@ body {
 	font-family: "Outfit", sans-serif;;
 	font-size: 212px;
 	line-height: 0.90em;
-	padding: 120px 75px 0px 75px;
-	margin: 0 0 100px 0;
+	padding: 120px 0px 120px 75px; /* top right bottom left */
+	margin: 0 0 0px 0; /* top right bottom left */
 	width: calc(100% - 150px);
 	height: auto;
 	background-color: #fff;
@@ -59,12 +59,12 @@ body {
 
 #home a:hover {
 	text-decoration: none; /* You can specify other styles here if needed */
-    color: red; /* This will change the text color to red on hover */
+    color: #FF2400; /* This will change the text color to red on hover */
 }
 
 .hover-effect:hover::after {
     content: "\A neither arrogant nor ignorant enough to call myself expat.";
-    color: red;
+    color: #FF2400;
     position: relative;
     background-color: transparent;
     padding: 0px;

@@ -19,14 +19,18 @@ Theme Name:
     --font_30: 1.875rem;
     --font_36: 2.25rem;
     --font_48: 3rem;
-    --40: 2.5rem;
-    --30: 1.875rem;
     --margin-54: 3.375rem;
     --margin-60: 3.75rem;
     --margin-100: 6.25rem;
     --margin-120: 7.5rem;
     --border-radius: 5px; /* Default border-radius for images */
+    --red: #FF2400;
+    --white: #FFF;
 }
+
+/*--------------------------------------------------------------
+>>> Global Styles
+----------------------------------------------------------------*/
 
 .img-container {
     background-color: #f0f0f0; /* Light gray background color */
@@ -38,23 +42,24 @@ Theme Name:
     overflow: hidden; /* Ensure content doesn't overflow */
 }
 
-img {
+img, svg {
     max-width: 100%;
     height: auto;
+}
+
+img {
     border-radius: var(--border-radius); /* Apply border-radius to all corners */
     vertical-align: middle; /* Adjust vertical alignment */
     object-fit: cover; /* Controls how the image fits within the container */
 }
 
-html {
+html, body {
     font-family: 'Teachers', sans-serif;
-    background-color: #FFF;
+    background-color: var(--white);
 }
 
 body {
-    font-family: 'Teachers', sans-serif;
     overflow-x: hidden;
-    background-color: #FFF;
     font-weight: 400;
     font-style: normal;
     color: #000;
@@ -64,10 +69,7 @@ body {
 a, a:hover, a:focus, i, input, button, input:focus, .transition {
     text-decoration: none;
     outline: none;
-    transition-delay: 0s;
-    transition-duration: 0.4s;
-    transition-property: all;
-    transition-timing-function: ease;
+    transition: all 0.4s ease;
     box-shadow: none;
     color: red; /* Change to make hyperlink text red */
 }
@@ -77,24 +79,10 @@ iframe {
     outline: none;
 }
 
-::-moz-selection {
+::-moz-selection, ::selection {
     background: var(--red);
     text-shadow: none;
     color: var(--white);
-}
-
-::selection {
-    background: var(--red);
-    text-shadow: none;
-    color: var(--white);
-}
-
-img {
-    max-width: 100%;
-    border: none;
-    outline: none;
-    height: auto;
-    border-radius: var(--border-radius); /* Apply border-radius to all corners */
 }
 
 input, textarea {
@@ -102,14 +90,13 @@ input, textarea {
     resize: none;
 }
 
-ul {
+ul, figure {
     padding: 0;
     margin: 0;
 }
 
 @font-face {
-    font-family: 'Teachers', sans-serif;
-    font-family: 'Teachers', sans-serif;
+    font-family: 'Teachers';
 }
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
@@ -118,35 +105,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     color: #000;
 }
 
-/* 1.2 Typography */
-h1, h2 {
-    font-family: 'Teachers', sans-serif;
-}
-
-h3, h4, h5, h6 {
-    font-family: 'Teachers', sans-serif;
-}
-
-figure {
-    margin: 0;
-}
-
-svg, img {
-    max-width: 100%;
-    height: auto;
-}
-
-.ds-boder_text {
+.ds-border_text {
     position: relative;
     display: inline-block;
 }
 
-.ds-boder_text span {
+.ds-border_text span {
     position: relative;
     z-index: 1;
 }
 
-.ds-boder_text:after {
+.ds-border_text:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -193,10 +162,7 @@ svg, img {
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
-    transition-delay: 0s;
-    transition-duration: 0.4s;
-    transition-property: all;
-    transition-timing-function: ease;
+    transition: all 0.4s ease;
     margin-left: 0.5rem;
 }
 
@@ -237,28 +203,20 @@ svg, img {
     color: #000;
 }
 
-/*-----------------------------------------------------------------
-  1. >>> Header Style
+/*--------------------------------------------------------------
+>>> Header Style
 ----------------------------------------------------------------*/
 .ds-header {
     padding-top: 3rem;
-    padding-bottom: var(--40);
-}
-
-.ds-logo {
-    font-family: 'Teachers', sans-serif;
-    color: #000;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
+    padding-bottom: var(--margin-40);
 }
 
 .ds-logo:hover {
     color: #000;
 }
 
-/*-----------------------------------------------------------------
-  2. >>> Banner Style
+/*--------------------------------------------------------------
+>>> Banner Style
 ----------------------------------------------------------------*/
 .ds-banner-section {
     text-align: left;
@@ -281,8 +239,8 @@ svg, img {
 
 .ds-banner-section p {
     font-size: var(--font_16);
-    line-height: var(--30);
-    margin-bottom: var(--30);
+    line-height: var(--font_30);
+    margin-bottom: var(--font_30);
 }
 
 .ds-button {
@@ -316,20 +274,13 @@ svg, img {
 }
 
 .ds-project-list-loop:nth-child(even) {
-    margin-top: -var(--margin-120);
-}
-
-.ds-project-list-loop:nth-child(odd) {
     margin-top: 0;
 }
 
 .ds-project-list-loop-inner {
     background-color: white;
     box-shadow: 0px 0px 0px #cecaca;
-    transition-delay: 0s;
-    transition-duration: 0.8s;
-    transition-property: all;
-    transition-timing-function: ease;
+    transition: all 0.8s ease;
     transform: translateY(0);
 }
 
@@ -346,18 +297,16 @@ svg, img {
     transform: translateY(-2rem);
 }
 
-/*-----------------------------------------------------------------
-  3. >>> About Style
+/*--------------------------------------------------------------
+>>> About Style
 ----------------------------------------------------------------*/
 .custom-font {
-    /* Add font styling here */
     font-family: 'Teachers', sans-serif;
-    /* Add any additional styling like color, etc. */
 }
-.ds-proj-hedding {
+
+.ds-proj-heading {
     font-size: 1.625rem;
     margin-bottom: 0.5rem;
-    font-family: 'Teachers', sans-serif;
     font-weight: 600;
 }
 
@@ -371,15 +320,14 @@ svg, img {
     margin-top: 8.8125rem;
 }
 
-.ads-bout-section .ds-heading-inner, .ds-back-home {
+.ds-about-section .ds-heading-inner, .ds-back-home {
     margin-bottom: var(--margin-54);
 }
 
-.ds-left-right-section .ds-hedding {
+.ds-left-right-section .ds-heading {
     font-size: 3rem;
     position: relative;
     margin-bottom: 0.875rem;
-    font-family: 'Teachers', sans-serif;
 }
 
 .ds-left-right-section {
@@ -400,8 +348,8 @@ svg, img {
     margin-bottom: 2.5rem;
 }
 
-/*-----------------------------------------------------------------
-  4. >>> Project Style
+/*--------------------------------------------------------------
+>>> Project Style
 ----------------------------------------------------------------*/
 .ds-case-studies-list {
     margin-bottom: var(--margin-120);
@@ -411,7 +359,7 @@ svg, img {
     margin-bottom: var(--margin-60);
 }
 
-.ds-hedding {
+.ds-heading {
     font-size: var(--font_48);
     margin-bottom: var(--font_14);
 }
@@ -424,23 +372,6 @@ svg, img {
     font-size: 1.375rem;
     line-height: var(--font_36);
     margin-bottom: 2.5rem;
-}
-
-.ds-view-button {
-    font-weight: 600;
-    font-size: 1rem;
-    color: #000;
-}
-
-.ds-view-button i {
-    display: inline-block;
-    vertical-align: middle;
-    color: #FF2400;
-    font-size: 1.625rem;
-}
-
-.ds-view-button:hover {
-    color: #FF2400;
 }
 
 .ds-case-studies-details {
@@ -456,8 +387,8 @@ svg, img {
     display: block;
 }
 
-/*-----------------------------------------------------------------
-  5. >>> Footer Style
+/*--------------------------------------------------------------
+>>> Footer Style
 ----------------------------------------------------------------*/
 .hover-text {
     position: relative;
@@ -475,17 +406,13 @@ svg, img {
     color: transparent;
     white-space: nowrap;
     overflow: hidden;
-    text-align: left; /* Ensure the text is aligned properly */
+    text-align: left;
     transition: color 0.3s ease;
-    pointer-events: none; /* Ensure the hover state is not interrupted */
+    pointer-events: none;
 }
 
 .hover-text:hover::after {
-    color: red; /* Set the desired hover color here */
-}
-
-.hover-text:hover {
-    color: transparent;
+    color: red;
 }
 
 .ds-lets_section {
@@ -495,7 +422,6 @@ svg, img {
 }
 
 .ds-right-text {
-    font-family: 'Teachers', sans-serif;
     margin: 0;
 }
 
@@ -506,10 +432,6 @@ svg, img {
 
 .ds-email-text {
     font-size: 15px; /* Adjust the font size for "Let's talk" */
-}
-
-.ds-border_text {
-    /* Add any additional border styles here if needed */
 }
 
 .ds-footer {
@@ -523,7 +445,6 @@ svg, img {
 
 .ds-lets_section h4 {
     color: #000;
-    font-family: 'Teachers', sans-serif;
     font-weight: 700;
     font-size: 4.375rem;
     margin-bottom: 1.0625rem;
@@ -542,10 +463,6 @@ svg, img {
     padding-bottom: 2.5rem;
 }
 
-.ds-email {
-    font-size: 16px; /* Adjust the font size as needed */
-    font-family: 'Teachers', sans-serif; /* Adjust the font family as needed */
-}
 .ds-email:hover {
     color: #000;
 }
@@ -590,9 +507,10 @@ svg, img {
     text-decoration: underline;
 }
 
-/*-------------------------------------------------------------------------------
- XS Style @media (max-width: 767px) 
--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> Responsive Styles
+----------------------------------------------------------------*/
+
 @media (max-width: 767px) {
     .row {
         margin-left: 0;
@@ -635,7 +553,7 @@ svg, img {
     }
 
     .ds-banner-section {
-        margin-bottom: var(--margin_30);
+        margin-bottom: var(--margin-30);
     }
 
     .ds-content-width p {
@@ -650,7 +568,7 @@ svg, img {
         grid-template-columns: auto;
     }
 
-    .ds-project-list-loop:nth-child(even), .ds-project-list-loop:nth-child(odd) {
+    .ds-project-list-loop {
         margin: 0;
         margin-bottom: 1.875rem;
     }
@@ -673,20 +591,6 @@ svg, img {
 
     .ds-footer {
         padding-top: 1.875rem;
-    }
-
-    .ds-email_social {
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 4.375rem 0;
-    }
-
-    .ds-copyright {
-        text-align: center;
-    }
-
-    .ds-social {
-        margin-top: 1.25rem;
     }
 }
 
